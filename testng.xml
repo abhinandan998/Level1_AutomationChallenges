@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Suite" parallel="tests" thread-count="2">
+    <test verbose="2" name="Chrome Test">
+        <parameter name="browsers" value="chrome"/>
+        <classes>
+            <class name="org.Project_By_Abhinandan.Challenge4.VwoLogin_and_DashboardPage"/>
+        </classes>
+    </test>
+    <test verbose="2" name="Edge Test">
+        <parameter name="browsers" value="edge"/>
+        <classes>
+            <class name="org.Project_By_Abhinandan.Challenge4.VwoLogin_and_DashboardPage"/>
+        </classes>
+    </test>
+
+</suite>
